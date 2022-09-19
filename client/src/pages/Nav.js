@@ -22,9 +22,7 @@ const Nav = () => {
       <section>
         {user && (
           <div className='border px-3 rounded'>
-            <Link onClick={logoutHandler} to='/logout'>
-              Logout
-            </Link>
+            <span onClick={logoutHandler}>Logout</span>
           </div>
         )}
       </section>

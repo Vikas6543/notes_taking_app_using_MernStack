@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import { registerUser } from '../../redux/userSlice';
 
@@ -19,7 +18,7 @@ const Register = () => {
   };
 
   if (user) {
-    navigate('/');
+    navigate('/dashboard');
   }
 
   return (
@@ -64,7 +63,7 @@ const Register = () => {
         </div>
 
         <div className='mt-3 text-sm text-gray-500 font-semibold'>
-          <Link to='/login'>Already have an account?</Link>
+          <Link to='/'>Already have an account?</Link>
         </div>
 
         <div className='mt-4'>

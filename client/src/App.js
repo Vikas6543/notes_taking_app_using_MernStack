@@ -14,10 +14,10 @@ function App() {
         <Nav />
         <Routes>
           <Route element={<ProtectedRoute />}>
-            <Route exact path='/' element={<Dashboard />} />
+            <Route exact path='/dashboard' element={<Dashboard />} />
             <Route path='/create' element={<CreateNote />} />
           </Route>
-          <Route path='/login' element={<Login />} />
+          <Route path='/' element={<Login />} />
           <Route path='/register' element={<Register />} />
         </Routes>
       </BrowserRouter>
