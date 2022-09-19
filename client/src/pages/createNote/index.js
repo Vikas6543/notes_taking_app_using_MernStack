@@ -20,7 +20,7 @@ const CreateNote = () => {
       toast.success('Note Created successfully', {
         autoClose: 1500,
       });
-      navigate('/');
+      navigate('/dashboard');
     } catch (error) {
       toast.error(error.response.data.message, {
         autoClose: 1500,
