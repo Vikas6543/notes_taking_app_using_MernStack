@@ -17,7 +17,7 @@ const Login = () => {
   };
 
   if (user) {
-    navigate('/');
+    navigate('/dashboard');
   }
 
   return (
